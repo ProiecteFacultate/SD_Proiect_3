@@ -223,7 +223,7 @@ void afis(node *nodAfis)
 
 int main()
 {
-    int q, i, x, op;
+    int q, i, x, y, z, zUltim, op;
     in>>q;
 
     for(i = 1; i <= q; i++)
@@ -256,6 +256,19 @@ int main()
         {
             in>>x;
             out<<cerinta5(x)->valoare<<'\n';
+        }
+        else if(op == 6)
+        {
+            in>>x>>y;
+
+            z = cerinta5(x)->valoare;
+            zUltim = cerinta4(y)->valoare;
+            while(z < zUltim)
+            {
+                out<<z<<" ";
+                z = cerinta5(z + 1)->valoare;
+            }
+            out<<zUltim<<'\n';
         }
     }
 
