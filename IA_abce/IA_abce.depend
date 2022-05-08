@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1651998371 source:d:\facultate\sd\proiect_3\ia_abce\main.cpp
+	<iostream>
+	<fstream>
+
